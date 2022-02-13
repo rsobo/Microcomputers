@@ -1,0 +1,39 @@
+;
+; postLab5.asm
+;
+; Created: 10/9/2020 1:23:28 PM
+; Author : ryans
+;
+
+	RJMP Q3
+Q1:
+	LDI R16, 0xFF
+	LDI R17, 0x00
+	OUT DDRD, R17
+	OUT DDRB, R16
+doop:
+	IN R18, PIND
+	OUT PORTB, R18
+	RJMP doop
+
+Q2:
+	LDI R16, 0xFF
+	LDI R17, 0x00
+	OUT DDRB, R17
+	OUT DDRD, R16
+	LDI R19, 5
+woop:
+	IN R18, PINB
+	ADD R18, R19
+	OUT PORTD, R18
+	RJMP woop
+
+Q3:
+	LDI R16, 0xFF
+	LDI R17, 0x00
+	OUT DDRB0, R17
+	OUT DDRB5, R16
+noop:
+	IN R18, PINB0
+	OUT PORTB5, R18
+	RJMP noop
