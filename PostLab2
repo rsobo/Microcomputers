@@ -1,0 +1,35 @@
+;
+; PostLab2.asm
+;
+; Created: 9/18/2020 1:27:51 PM
+; Author : ryans
+;
+
+
+; Replace with your application code
+	RJMP QUIZ
+Q1:
+    LDI R20, 0b10111010
+	MOV R21, R20
+	COM R21
+	ADD R20, R21
+	LDI R18, 10
+	LDI R19, 193
+	SUB R18, R19
+
+Q2:
+	LDI R16, 0xD8
+	LDI R17, 0xA1
+	STS 0x25, R16
+	STS 0x28, R17
+	LDS R18, 0x25
+	LDS R19, 0x28
+	ADD R18, R19
+	STS 0x25, R18
+
+QUIZ:
+	LDI R20,0 x00
+	LDI R21, 0xAA
+	LDI R22, 0xFF
+	OR R20, R21
+	EOR R20, R22 
