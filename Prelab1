@@ -1,0 +1,36 @@
+;
+; Prelab1.asm
+;
+; Created: 9/10/2020 4:43:10 PM
+; Author : ryans
+;
+
+; Q1
+;	LDI	R20,$27
+;	LDI	R21,$15
+;	ADD	R20, R21
+;
+;	LDI	R20,$20
+;	LDI	R21,$15
+;	SUB	R20, R21
+;
+;	LDI	R24,95
+;	LDI	R25,95
+;	MOV 	R24, R25
+;
+;	LDI	R22,0x70
+;	DEC 	R22
+;	LDI	R23,0x50
+;	SUB	R22, R23
+;	INC	R22
+;
+;L1:	RJMP	L1
+
+;Q2
+	LDI R20, $99
+	LDS R0, 0x20
+	LDS R12, 0x20
+	LDS R1, 0x00
+	STS $21, R0
+	INC R12
+	STS $31, R12 
