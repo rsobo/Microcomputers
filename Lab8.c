@@ -77,8 +77,8 @@ int getDisplay(int input){
 
 int main(){
     
-	//Q1();
-	//Q2();
+	Q1();
+	Q2();
 	Q3();
 	return 0;
 }
