@@ -6,12 +6,11 @@
 ;
 
 
-; Replace with your application code
 ;Q1
-;	LDI R20, 0x99
-;	LDS R0, 0x14
-;	LDS R12, 0x14
-;	LDS R31, 0x14
+	LDI R20, 0x99
+	LDS R0, 0x14
+	LDS R12, 0x14
+	LDS R31, 0x14
 
 ;Q2
 	LDI R20, 6
