@@ -6,7 +6,7 @@
  */ 
 
 #include <avr/io.h>
-/**
+
 void Q1(){
 	DDRB = DDRB | 0b00000010;
 	PORTB = PORTB & 0b11111101;
@@ -33,7 +33,7 @@ void Q1B(){
 		TIFR0=1<<OCF0A;
 		PORTB^=0b00000010;
 	}
-}*/
+}
 
 void T1Delay (){
 	TCNT1 = 65536 - 16000;
@@ -61,6 +61,7 @@ void Q2A(){
 }
 
 int main(){
+	Q1();
 	Q2A();
 }
 
